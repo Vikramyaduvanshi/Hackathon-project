@@ -35,20 +35,23 @@ return {succssess:false,message:e.message}
 let logout=useCallback(()=>{
     setuser(null)
 },[])
-let register=useCallback( async ({name,email,number,password,problem=false})=>{
-let obj={
-    METHOD:"POST",
-    body:JSON.stringify({name,email,number,password,problem}),
-    redirect:"follow"
-}
 
+let register = useCallback(async ({ name, email, number, password, problem = false }) => {
+    let obj = {
+      method: "POST", 
+      body: JSON.stringify({ name, email, number, password, problem }),
+      redirect: "follow"
+    };
+  
+    let res = await fetch("https://userauth-bbbb0-default-rtdb.firebaseio.com/users.json", obj);
+  
+    let data = await res.json(); 
+    console.log(data);
+    
+    return { success: true }; 
 
-let res= await fetch("https://userauth-bbbb0-default-rtdb.firebaseio.com/users.json",obj)
-
-let data= res.json
-console.log(data)
-
-},[])
+  }, []);
+  
 
 return (
 <Authcontex.Provider value={{login,user,community,logout,register}}>

@@ -12,7 +12,7 @@ let [p,setp]=useState(false)
        
         
 <div className="userproblem">
-{p && <CreateProblem setp={setp} p={p}/>}
+{p && <CreateProblem setp={setp} p={p} />}
 
 <button onClick={()=>setp(!p)}>{p ? "Cancel":"Create Problem"}</button>
 

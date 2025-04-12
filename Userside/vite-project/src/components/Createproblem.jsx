@@ -2,7 +2,9 @@ import { useContext, useState } from "react"
 import { Authcontex } from "../context/Authcontext"
 import "../App.css"
 
-export function CreateProblem(){
+
+export function CreateProblem({setp,p}){
+  
     let [problemcontent,setproblem]=useState("")
 let {user}=useContext(Authcontex)
 let [id,{}]=user
@@ -15,8 +17,8 @@ let obj={
 
 let res= await fetch(`https://userauth-bbbb0-default-rtdb.firebaseio.com/users/${id}.json`,obj)
 let res1= await res.json();
-console.log(res1)
 
+setp(!p)
 }
 function handlechange(e){
     setproblem(e.target.value)

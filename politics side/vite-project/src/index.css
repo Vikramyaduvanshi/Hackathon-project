@@ -90,3 +90,63 @@ transition-duration: .7s;
   font-size: 1rem;
   color: #555;
 }
+
+
+/* register */
+
+
+
+
+.registir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f4f8;
+}
+
+.registir form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.registir input[type="text"],
+.registir input[type="email"],
+.registir input[type="tel"],
+.registir input[type="password"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.registir input[type="text"]:focus,
+.registir input[type="email"]:focus,
+.registir input[type="tel"]:focus,
+.registir input[type="password"]:focus {
+  border-color: #4a90e2;
+}
+
+.registir input[type="submit"] {
+  padding: 0.75rem;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.registir input[type="submit"]:hover {
+  background-color: #357ac7;
+}
