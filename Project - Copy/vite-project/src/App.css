@@ -1,0 +1,377 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+
+    display:  flex ;
+    justify-content:space-evenly;
+    align-items:center;
+    padding: 1.5rem;
+    background-color: blue;
+}
+.navbar>a{
+
+    padding: 3px;
+    font-size: 18px;
+   text-decoration: none;
+   color: white;
+}
+.navbar>a:hover{
+
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: azure;
+    color: rgb(0, 0, 0);
+}
+
+.navbar >ul{
+    display:  flex ;
+    justify-content: center ;
+    align-items: "center";
+    gap: 1.5rem;
+}
+.navbar >ul a{
+    padding: 3px;
+    font-size: 18px;
+   text-decoration: none;
+   color: white;
+}
+.navbar >ul a:hover{
+    
+    border-radius: 5px;
+   text-decoration: none;
+   background-color: azure;
+   color: rgb(0, 0, 0);
+}
+
+
+/* profileupdateform */
+
+/* App.css */
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Profile display card */
+  .profile {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .profile:hover {
+    transform: scale(1.01);
+  }
+  
+  .insidep {
+    margin-bottom: 20px;
+  }
+  
+  .insidep h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .insidep p {
+    font-size: 16px;
+    color: #555;
+    margin: 6px 0;
+  }
+  
+  /* Button styles */
+  .profile button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .profile button:hover {
+    background-color: #3730a3;
+  }
+  
+  /* Form edit styling */
+  .profileeditform {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  }
+  .logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logout>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15803d;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: .5rem 2rem;
+  }
+  
+  .logout>button:hover{
+background-color: #333;
+color: white;
+  }
+  
+  .profileeditform form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .profileeditform input[type="text"],
+  .profileeditform input[type="email"],
+  .profileeditform input[type="password"],
+  .profileeditform input[type="tel"] {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .profileeditform input:focus {
+    border-color: #4f46e5;
+  }
+  
+  .profileeditform input[type="submit"] {
+    background-color: #16a34a;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .profileeditform input[type="submit"]:hover {
+    background-color: #15803d;
+  }
+  
+  .login{
+   height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .login >form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 4rem;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .login >form input{
+border: 1px solid black;
+padding: .6rem 2rem;
+border-radius: 5px;
+  }
+  .login>form input[type="submit"]{
+    background-color: #15803d;
+    color: white;
+  }
+
+.login >form input[type="submit"]:hover{
+  background-color: black;
+  color: white;
+}
+
+  .register{
+    margin: 2rem;
+background-color: #16a34a;
+padding: .5rem 1rem;
+border-radius: 2px;
+
+  }
+  .register:hover{
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+
+  }
+
+
+  /* // problem */
+
+  /* General container */
+.userproblem {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button to toggle problem creation */
+.userproblem button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.userproblem button:hover {
+  background-color: #1e40af;
+}
+
+/* Problem display */
+.userproblem ul {
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  padding: 20px;
+  list-style-type: none;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.userproblem ul p {
+  margin: 10px 0;
+}
+
+/* Create Problem Form */
+.userproblem h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.userproblem form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userproblem textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.3s;
+}
+
+.userproblem textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.userproblem input[type="submit"] {
+  background-color: #16a34a;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.userproblem input[type="submit"]:hover {
+  background-color: #15803d;
+}
+
+
+/* Feedback */
+
+/*/* Container for feedback section */
+.feeback.form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f9fafb;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.feeback.form h1 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.feeback.form h4 {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Textarea styling */
+form.feedback textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+form.feedback textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Submit button */
+form.feedback input[type="submit"] {
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form.feedback input[type="submit"]:hover {
+  background-color: #16a34a;
+}
